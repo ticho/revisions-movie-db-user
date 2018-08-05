@@ -12,7 +12,7 @@ Commencer un projet rails et le mettre en ligne sur Heroku.
 
 ## 2 - Movies database
 
-Creer un model `Movie` qui aura un `title`, un `director` et une `release_date`.
+Creer un model `Movie` qui aura un `title`, un `director` et une `release_year`.
 
 > Il est possible de faire cette etape en une seule ligne avec la commande `generate`.
 
