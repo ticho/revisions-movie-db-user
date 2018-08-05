@@ -1,24 +1,41 @@
-# README
+# Movie - db - user
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Projet rails léger pour reviser les notions des deux premieres semaines de rails.
 
-Things you may want to cover:
+Nous allons creer un site qui permettra de lister nos films preferes.
 
-* Ruby version
+La liste sera visible de tous, comme page d'accueil de notre site, mais il sera necessaire de se connecter pour ajouter/supprimer des films de la liste.
 
-* System dependencies
+## 1 - Installation
 
-* Configuration
+Commencer un projet rails et le mettre en ligne sur Heroku.
 
-* Database creation
+## 2 - Movies database
 
-* Database initialization
+Creer un model `Movie` qui aura un `title`, un `director` et une `release_date`.
 
-* How to run the test suite
+> Il est possible de faire cette etape en une seule ligne avec la commande `generate`.
 
-* Services (job queues, cache servers, search engines, etc.)
+Seeder cette liste avec au moins 3 films.
 
-* Deployment instructions
+La page index doit nous permettre de voir ces films et de les supprimer en un clic. 
 
-* ...
+En dessous de la liste, un formulaire nous permet de rajouter un film.
+
+## 3 - Users
+
+Creer un model user qui aura un `username` et un mot de passe sécurisé.
+
+Le header de notre page comporte maintenant un bouton `login`. 
+
+Un visiteur ne pourra pas éditer la liste, seulement la voir.
+
+À la place du formulaire d'ajout de film, le visiteur voit un lien qui l'invite à creer un compte ou à se connecter pour ajouter ou supprimer un film.
+
+## 4 - Bonus
+
+La liste permet de voir quel utilisateur a ajoué quel film.
+
+Chaque utilisateur peut voter pour un film (type reddit, + ou -).
+
+Les films sont affichés en fonction de leur note (du plus plebiscité au plus detesté).
